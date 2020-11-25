@@ -16,6 +16,15 @@ class Solutions:
             else:
                 window.add(nums[num])
 
+        # # brute force (TLE)
+        # for i in range(len(nums)):
+        #     for j in range(1, k+1):
+        #         if i+j >= len(nums):
+        #             break
+        #         if nums[i+j] == nums[i]:
+        #             return True
+        # return False
+
 if __name__ == '__main__':
     s = Solutions()
     print(s.containsNearbyDuplicate([1,2,3,1,2,3], 2))
